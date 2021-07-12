@@ -1,0 +1,41 @@
+
+step:1 composer create-project laravel/laravel blog
+
+step:2 cd blog
+
+step:3 php artisan key:generate
+
+step:4 mysql -u root -p 
+
+step:5 create database;
+
+step:6 use database;
+
+step:7 composer require laravel/ui
+
+step:8 php artisan ui bootstrap --auth
+
+step:9 npm install
+
+step:10 npm run production
+
+step:11 php artisan migrate:fresh
+
+step:12 php artisan serve
+
+step:13 got to routes > web.php > Auth::routes(['register' => false]);
+
+step:14 php artisan make:seeder UsersTableSeeder
+
+step:15 got to database > seeders > DatabaseSeeder.php > run(){
+				$this -> call(UsersTableSeeder::class);
+step:16 got to seeders > UsersTableSeeder.php >  
+	run(){ User::updateOrCreate(['id' => 1],
+	['name' => 'manir',
+	'email' => 'manir@gmail.com',
+	'password' => '$asdjfsaldjf;dsajf'
+
+Step:17 php artisan tinker  >>> Hash:make('password')
+	=> "$sasdfas;fsdklf" copy this  and exit
+
+step:18 go to browser and login

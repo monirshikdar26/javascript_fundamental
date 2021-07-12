@@ -1,0 +1,14 @@
+
+step:1 goto laravel root directory using cd command
+
+step:2 git init
+
+step:3 git add .
+
+step:4 git commit -m "first commit"
+
+step:5 git remote add origin https://<repo_owner>@bitbucket.org/<accountname>/<reponame>.git
+
+step:6 git push -u origin master
+
+
